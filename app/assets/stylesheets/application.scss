@@ -17,3 +17,57 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+
+/****** 更换导航栏颜色 ******/
+
+.navbar-default {
+    background-color: #F8F8FF;//背景颜色
+    border-color: #F8F8FF;//边框色
+    margin-bottom: 0;//底部 margin 不撑开距离
+}
+
+/****** 更换导航栏颜色 ******/
+
+
+/****** 修改导航栏链接颜色 ******/
+
+.navbar-default{
+  color: #795548;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #9E9E9E;
+}
+.navbar-default .navbar-nav > .active > a ,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:hover{
+  color: #795548;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    background-color: #FFC107;
+}
+
+/****** 修改导航栏链接颜色 ******/
+
+/****** 去掉导航栏的圆角 ******/
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;//圆角为0
+    }
+}
+
+/****** 去掉导航栏的圆角 ******/
+
+.navbar-brand > img {
+    display: inline-block;	//图片和链接文字显示在同一行
+    margin-right: 10px; //图片和链接文字拉开一点距离
+    width: 32px; //定制图片宽度
+    height: 32px; //定制图片高度
+}
+
