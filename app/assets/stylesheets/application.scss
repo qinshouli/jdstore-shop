@@ -81,6 +81,7 @@
 .footer {
   background: #ffcdd2;
   height: auto;
+  margin-top: 10px;
   padding-bottom: 30px;
   position: relative;
   width: 100%;
@@ -207,6 +208,38 @@
 /********************* footer *********************/
 
 
+.what-we-do{
+    text-align: center;
 
+    img{
+      margin-top: 30px;
+      margin-bottom: 0px;
+      width: 250px;
+      height: 250px;
+    }
+}
 
+.what-we-do .do-box{
+    border: 1px solid transparent;
+}
 
+.do-box p {
+    
+    bottom: 0;
+    left: 5;
+    right: 5;
+    width: 300px;
+    height: 30px;
+    line-height: 25px;
+    margin: 10px;
+    color: #575757;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.do-box b{
+  font-size: 20px
+}
