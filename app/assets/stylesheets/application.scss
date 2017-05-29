@@ -20,21 +20,34 @@
 
 /****** 更换导航栏颜色 ******/
 .navbar-default {
+<<<<<<< HEAD
     background-color: #8764B8;//背景颜色
     border-color: #8764B8;//边框色
+=======
+    background-color: #ff8a80;//背景颜色
+    border-color: #ff8a80;//边框色
+>>>>>>> f5345498d2e6ca179ec8dfd5094b0e62355c38b9
     margin-bottom: 0;//底部 margin 不撑开距离
 }
 /****** 更换导航栏颜色 ******/
 
 .navbar-default .navbar-brand {
+<<<<<<< HEAD
    color: #FFA07A;//字体颜色
+=======
+   color: #EEEEEE;//JDSTORE字体颜色
+>>>>>>> f5345498d2e6ca179ec8dfd5094b0e62355c38b9
 
 }
 
 /****** 修改导航栏链接颜色 ******/
 
 .navbar-default .navbar-nav > li > a{
+<<<<<<< HEAD
   color: #FFA07A;
+=======
+  color: #EEEEEE;
+>>>>>>> f5345498d2e6ca179ec8dfd5094b0e62355c38b9
 }
 
 .navbar-default .navbar-nav > li > a:hover{
@@ -79,8 +92,14 @@
   display: block;
 }
 .footer {
+<<<<<<< HEAD
   background: #D8BFD8;
   height: auto;
+=======
+  background: #ffcdd2;
+  height: auto;
+  margin-top: 10px;
+>>>>>>> f5345498d2e6ca179ec8dfd5094b0e62355c38b9
   padding-bottom: 30px;
   position: relative;
   width: 100%;
@@ -193,7 +212,11 @@
   color: #EDEFF1 !important;
 }
 .footer-bottom {
+<<<<<<< HEAD
   background: #8764B8;
+=======
+  background: #ff8a80;
+>>>>>>> f5345498d2e6ca179ec8dfd5094b0e62355c38b9
   border-top: 1px solid #DDDDDD;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -205,3 +228,43 @@
   font-size: 1.5em; 
 }
 /********************* footer *********************/
+<<<<<<< HEAD
+=======
+
+
+.what-we-do{
+    text-align: center;
+
+    img{
+      margin-top: 30px;
+      margin-bottom: 0px;
+      width: 250px;
+      height: 250px;
+    }
+}
+
+.what-we-do .do-box{
+    border: 1px solid transparent;
+}
+
+.do-box p {
+    
+    bottom: 0;
+    left: 5;
+    right: 5;
+    width: 300px;
+    height: 30px;
+    line-height: 25px;
+    margin: 10px;
+    color: #575757;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.do-box b{
+  font-size: 20px
+}
+>>>>>>> f5345498d2e6ca179ec8dfd5094b0e62355c38b9
