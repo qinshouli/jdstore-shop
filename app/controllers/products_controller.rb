@@ -1,10 +1,18 @@
 class ProductsController < ApplicationController
+  before_action :validate_search_key, only: [:search]
   def index
-    @products = Product.all
+    if params[:category].blank?
+      @products = Product.all
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @products = Product.where(:category_id => @category_id)
+    end
   end
+
   def show
     @product = Product.find(params[:id])
   end
+
   def add_to_cart
     @product = Product.find(params[:id])
     if !current_cart.products.include?(@product)
@@ -15,4 +23,28 @@ class ProductsController < ApplicationController
    end
     redirect_to :back
   end
+
+  def search
+    if @query_string.present? && !@query_string.blank?
+      search_result = Product.ransack(@search_criteria).result(:distinct => true)
+      @products = search_result.paginate(:page => params[:page], :per_page => 5)
+      if @products.blank?
+        redirect_to root_path, alert: "没有找到该商品"
+      end
+    else
+      redirect_to root_path, notice: "搜索内容不能为空，请输入关键字搜索！"
+    end
+  end
+
+  protected
+
+  def validate_search_key
+    @query_string = params[:q].gsub(/\\|\'|\/|\?/, "") if params[:q].present?
+    @search_criteria = search_criteria(@query_string)
+  end
+
+  def search_criteria(query_string)
+    {:title_cont => query_string}
+  end
+
 end
