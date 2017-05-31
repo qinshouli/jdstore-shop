@@ -85,7 +85,7 @@
   display: block;
 }
 .footer {
-
+  background-color: #ffcdd2;
   padding-bottom: 30px;
   position: relative;
   width: 100%;
@@ -197,7 +197,7 @@
   color: #EDEFF1 !important;
 }
 .footer-bottom {
-
+  background-color: #ff8a80;
   border-top: 1px solid #DDDDDD;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -225,6 +225,10 @@
 
 .what-we-do .do-box{
     border: 1px solid transparent;
+}
+
+.do-box{
+  margin-bottom: 30px;
 }
 
 .do-box p {
@@ -262,4 +266,62 @@
 .j{
   margin-top: 10px; //product页面不紧挨着导航栏
 }
+
 /********************* search 页面 *********************/
+
+body{margin:0px; padding:0px;}
+@-webkit-keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
+ 
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
+.home-product {
+    background:url("https://ws1.sinaimg.cn/large/006tNbRwly1fg2cie3vmjj31kw1291ky.jpg");
+    float: left;
+    padding: 100px 0;
+    width: 100%;
+    height: 60%;
+    color:#fff !important;
+  min-height:641px;
+  -webkit-animation: backgroundScroll 35s linear infinite;
+  animation: backgroundScroll 10s linear infinite;
+  background-size:130% 100%;
+  background-position:top;
+  background-attachment:fixed;
+
+}
+
+       /*********4个水果**********/
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #ecf0f1;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #FAFAFA;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+/*********4个水果**********/
+
+
