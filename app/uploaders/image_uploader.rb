@@ -10,10 +10,10 @@ class ImageUploader < CarrierWave::Uploader::Base
   #storage :file
 
   if Rails.env.production?
-      storage :fog
+      storage :qiniu
     elsif Rails.env.development?
       storage :file
-    end 
+    end
   # storage :fog
 
   # Override the directory where uploaded files will be stored.
