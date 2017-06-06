@@ -59,7 +59,7 @@ description: "很甜",
 price: "10",
 quantity: "200",
 category: category,
-image: open("https://ws3.sinaimg.cn/large/006tNc79ly1fg89sm6ufrj30r90lcdih.jpg")
+image: open("http://ww4.sinaimg.cn/large/006tNc79ly1ffyxu3m71bj30sg0iqwfj.jpg")
 )
 
 Product.create!(title: "橙子",
